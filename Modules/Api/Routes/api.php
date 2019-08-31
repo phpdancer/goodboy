@@ -3,8 +3,6 @@
 use Illuminate\Http\Request;
 
 /*
- * 废弃，请移步至 Modules/Api/Routes/ 配置
- *
 |--------------------------------------------------------------------------
 | API Routes
 |--------------------------------------------------------------------------
@@ -15,6 +13,9 @@ use Illuminate\Http\Request;
 |
 */
 
-//Route::middleware('auth:api')->get('/user', function (Request $request) {
-//    return $request->user();
-//});
+
+Route::get('/', 'Index\IndexController@index');
+
+Route::middleware('auth:api')->get('/api', function (Request $request) {
+    return $request->user();
+});

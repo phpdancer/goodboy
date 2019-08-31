@@ -67,7 +67,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Shanghai',
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'zh-CN',
 
     /*
     |--------------------------------------------------------------------------
@@ -227,5 +227,13 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+
+
+    /**
+     * 子域名配置
+     */
+    'admin_domain'  => 'admin.goodboy.ren',
+    'api_domain'    => 'api.goodboy.ren',
+
 
 ];
