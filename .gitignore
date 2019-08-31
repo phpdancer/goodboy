@@ -12,3 +12,4 @@ yarn-error.log
 .editorconfig
 .gitattributes
 .styleci.yml
+.idea/
